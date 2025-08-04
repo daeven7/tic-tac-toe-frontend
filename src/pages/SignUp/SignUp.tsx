@@ -60,27 +60,27 @@ const SignUpPage: React.FC = () => {
           >
             <Form.Item
               name="email"
-              // rules={[
-              //   { required: true, message: "Please input your email!" },
-              //   {
-              //     type: "email",
-              //     message: "Please enter a valid email address!",
-              //   },
-              // ]}
+              rules={[
+                { required: true, message: "Please input your email!" },
+                {
+                  type: "email",
+                  message: "Please enter a valid email address!",
+                },
+              ]}
             >
               <Input prefix={<MailOutlined />} placeholder="Email" />
             </Form.Item>
             <Form.Item
               name="password"
-              // rules={[
-              //   { required: true, message: "Please input your Password!" },
-              //   {
-              //     pattern:
-              //       /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,}$/,
-              //     message:
-              //       "Password must be at least 8 characters long, have at least 1 letter, 1 number, and 1 special character.",
-              //   },
-              // ]}
+              rules={[
+                { required: true, message: "Please input your Password!" },
+                {
+                  pattern:
+                    /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,}$/,
+                  message:
+                    "Password must be at least 8 characters long, have at least 1 letter, 1 number, and 1 special character.",
+                },
+              ]}
             >
               <Input.Password
                 prefix={<LockOutlined />}
