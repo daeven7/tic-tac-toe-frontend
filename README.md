@@ -2,7 +2,7 @@
 
 ##  Architecture
 
-- **Flask API** - Game logic and AI moves
+- **Flask API** - Main game engine
 - **Node.js Backend** - Authentication, game sessions, and user management
 - **React Frontend** - Web interface
 - **React Native App** - Mobile interface
