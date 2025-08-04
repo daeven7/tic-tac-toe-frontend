@@ -1,0 +1,53 @@
+.centeredForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.link {
+  color: #311e1e;
+}
+
+.link:hover {
+  color: #775b53;
+  text-decoration: underline;
+}
+
+.ant-form-item-explain-error {
+  color: #ff4d4f;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.formTitle {
+  display: block !important;
+  margin-bottom: 1rem !important;
+}
+
+.formFooter {
+  display: block !important;
+  margin-top: 0.5rem !important;
+}
+
+.formCard {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

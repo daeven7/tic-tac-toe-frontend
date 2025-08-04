@@ -1,0 +1,152 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gameCard {
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.startGameSection {
+  text-align: center;
+  margin-bottom: 32px;
+  padding: 24px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.startButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  max-width: 300px;
+  margin: 0 auto 24px;
+  background: #e6f7ff;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: contents;
+}
+
+.cell {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 2px solid #d9d9d9;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: default;
+  transition: all 0.2s ease;
+  user-select: none;
+
+  &:hover {
+    border-color: #1890ff;
+    transform: scale(1.02);
+  }
+}
+
+.cell.clickable {
+  cursor: pointer;
+  background: #f6ffed;
+
+  &:hover {
+    background: #d9f7be;
+    border-color: #52c41a;
+    transform: scale(1.05);
+  }
+}
+
+.cellValue {
+  color: #1890ff;
+  font-weight: 700;
+  
+  &:empty {
+    color: transparent;
+  }
+}
+
+.gameOverSection {
+  text-align: center;
+  // margin-top: 24px;
+  // padding: 16px;
+  // background: #fff7e6;
+  // border-radius: 8px;
+  // border: 1px solid #ffd591;
+}
+
+.loadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  gap: 16px;
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .gameCard {
+    margin: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .startButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .board {
+    max-width: 250px;
+  }
+
+  .cell {
+    font-size: 1.5rem;
+  }
+} 
