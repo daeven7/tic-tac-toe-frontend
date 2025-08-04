@@ -60,21 +60,21 @@ const SignInPage: React.FC = () => {
           >
             <Form.Item
               name="email"
-              // rules={[
-              //   { required: true, message: "Please input your email!" },
-              //   {
-              //     type: "email",
-              //     message: "Please enter a valid email address!",
-              //   },
-              // ]}
+              rules={[
+                { required: true, message: "Please input your email!" },
+                {
+                  type: "email",
+                  message: "Please enter a valid email address!",
+                },
+              ]}
             >
               <Input prefix={<UserOutlined />} placeholder="Email" />
             </Form.Item>
             <Form.Item
               name="password"
-              // rules={[
-              //   { required: true, message: "Please input your Password!" },
-              // ]}
+              rules={[
+                { required: true, message: "Please input your Password!" },
+              ]}
             >
               <Input.Password
                 prefix={<LockOutlined />}
